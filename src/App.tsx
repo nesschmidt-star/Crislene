@@ -263,22 +263,24 @@ export default function App() {
 
       <section id="sobre" className="py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="relative">
             <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="space-y-4 pt-12"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="relative z-10"
             >
-              <img src="https://images.unsplash.com/photo-1543362906-acfc16c67564?q=80&w=1965&auto=format&fit=crop" className="rounded-2xl aspect-[3/4] object-cover" referrerPolicy="no-referrer" />
-              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop" className="rounded-2xl aspect-[4/5] object-cover" referrerPolicy="no-referrer" />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: -40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="space-y-4"
-            >
-              <img src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?q=80&w=2012&auto=format&fit=crop" className="rounded-2xl aspect-[4/5] object-cover" referrerPolicy="no-referrer" />
-              <img src="https://images.unsplash.com/photo-1547514701-42782101795e?q=80&w=1974&auto=format&fit=crop" className="rounded-2xl aspect-[3/4] object-cover" referrerPolicy="no-referrer" />
+              <div className="aspect-[3/4] rounded-[40px] overflow-hidden shadow-2xl border-8 border-white">
+                <img 
+                  src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2000&auto=format&fit=crop" 
+                  alt="Crislene Carvalho - crisprof" 
+                  className="w-full h-full object-cover" 
+                  referrerPolicy="no-referrer" 
+                />
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-yellow rounded-full -z-10 blur-2xl opacity-20"></div>
+              <div className="absolute -top-6 -left-6 w-32 h-32 bg-brand-brown rounded-full -z-10 blur-2xl opacity-10"></div>
             </motion.div>
           </div>
           
