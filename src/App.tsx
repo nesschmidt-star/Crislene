@@ -110,7 +110,7 @@ export default function App() {
             className="col-span-1 md:col-span-7 space-y-6 md:space-y-8 text-center md:text-left order-2 md:order-1"
           >
             <div className="inline-block px-3 py-1 rounded-sm text-[10px] font-bold uppercase tracking-[0.2em] mb-2 bg-brand-brown text-brand-yellow">
-              Nutrição Clínica & Funcional
+              Emagrecimento e Saúde da Mulher
             </div>
             <h1 className="text-4xl md:text-7xl font-serif leading-tight text-brand-brown">
               Equilíbrio para as <span className="italic text-brand-yellow">nutrividas</span>
@@ -369,7 +369,7 @@ export default function App() {
             {
               num: "01",
               title: "Emagrecimento",
-              desc: "Estratégias sustentáveis sem restrições severas."
+              desc: "Estratégia que funciona a longo prazo, não só por alguns dias."
             },
             {
               num: "02",
@@ -378,8 +378,8 @@ export default function App() {
             },
             {
               num: "03",
-              title: "Gestantes",
-              desc: "Acompanhamento para uma gestação saudável e segura."
+              title: "Corrida",
+              desc: "Quanto mais leve você se torna, melhor você corre."
             },
             {
               num: "04",
