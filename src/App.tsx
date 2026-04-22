@@ -100,8 +100,8 @@ export default function App() {
           >
             <div className="col-span-4 row-span-2 aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
               <img
-                src="/criscorrida.jpeg"
-                alt="Crislene Carvalho - criscorrida"
+                src="/cris_corrida.jpeg"
+                alt="Crislene Carvalho - cris_corrida"
                 className="w-full h-full object-cover grayscale-[10%]"
                 referrerPolicy="no-referrer"
               />
