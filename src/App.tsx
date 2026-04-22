@@ -100,7 +100,7 @@ export default function App() {
           >
             <div className="col-span-4 row-span-2 aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
               <img
-                src="https://images.unsplash.com/photo-1571019623119-f0607ce678a1?q=80&w=2070&auto=format&fit=crop"
+                src="/criscorrida.jpeg"
                 alt="Crislene Carvalho - criscorrida"
                 className="w-full h-full object-cover grayscale-[10%]"
                 referrerPolicy="no-referrer"
@@ -272,8 +272,8 @@ export default function App() {
             >
               <div className="aspect-[3/4] rounded-[40px] overflow-hidden shadow-2xl border-8 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=2000&auto=format&fit=crop" 
-                  alt="Crislene Carvalho - crisprof" 
+                  src="/crispro.jpeg" 
+                  alt="Crislene Carvalho - crispro" 
                   className="w-full h-full object-cover" 
                   referrerPolicy="no-referrer" 
                 />
