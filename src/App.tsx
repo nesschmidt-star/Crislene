@@ -480,14 +480,14 @@ export default function App() {
                 transition={{ delay: item.id * 0.1 }}
                 className="group relative"
               >
-                <div className="aspect-[3/4] rounded-2xl md:rounded-[32px] overflow-hidden shadow-lg border-2 border-white bg-brand-beige/20">
+                <div className="aspect-[3/4] rounded-2xl md:rounded-[32px] overflow-hidden shadow-lg border-2 border-white bg-brand-beige/20 flex items-center justify-center p-2">
                   <img 
                     src={`/feed${item.id}.jpeg`} 
                     alt={`Feedback ${item.label}`} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-contain"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-brown/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-brown/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
                     <span className="text-white text-[10px] md:text-xs font-bold uppercase tracking-widest">{item.label}</span>
                   </div>
                 </div>
