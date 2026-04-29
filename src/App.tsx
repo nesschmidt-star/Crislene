@@ -459,6 +459,47 @@ export default function App() {
         </div>
       </section>
 
+      <section className="py-20 md:py-32 bg-white px-6 border-t border-brand-brown/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 md:mb-20">
+            <span className="text-brand-yellow font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 block">Resultados</span>
+            <h2 className="text-3xl md:text-6xl font-serif text-brand-brown">Feed<span className="italic text-brand-yellow">back</span></h2>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {[
+              { id: 1, label: "Evolução Corporal" },
+              { id: 2, label: "Saúde & Vitalidade" },
+              { id: 3, label: "Performance Treino" },
+              { id: 4, label: "Estilo de Vida" }
+            ].map((item) => (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: item.id * 0.1 }}
+                className="group relative"
+              >
+                <div className="aspect-[3/4] rounded-2xl md:rounded-[32px] overflow-hidden shadow-lg border-2 border-white bg-brand-beige/20">
+                  <img 
+                    src={`/feed${item.id}.jpeg`} 
+                    alt={`Feedback ${item.label}`} 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-brown/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4 md:p-6">
+                    <span className="text-white text-[10px] md:text-xs font-bold uppercase tracking-widest">{item.label}</span>
+                  </div>
+                </div>
+                <div className="mt-3 text-center md:hidden">
+                  <span className="text-brand-brown/60 text-[10px] font-bold uppercase tracking-widest">{item.label}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 md:py-32 bg-brand-yellow/10">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="flex justify-center mb-6">
