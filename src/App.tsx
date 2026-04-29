@@ -478,7 +478,7 @@ export default function App() {
               &copy; {new Date().getFullYear()} Crislene Carvalho. Todos os direitos reservados.
             </div>
             <div className="flex flex-col md:flex-row flex-wrap justify-center md:justify-start gap-4 md:gap-8 text-[10px] uppercase tracking-widest font-extrabold text-brand-brown/70">
-              <span className="bg-brand-brown text-white px-2 py-0.5 rounded">CRN: 12345/P</span>
+              <span className="bg-brand-brown text-white px-2 py-0.5 rounded">CNR9: 31532</span>
               <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition-colors flex items-center justify-center gap-2">
                 <Instagram className="w-3 h-3" /> @crisllenecarvalho
               </a>
