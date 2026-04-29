@@ -417,7 +417,7 @@ export default function App() {
             {[
               { id: 1, label: "Evolução Corporal" },
               { id: 2, label: "Saúde & Vitalidade" },
-              { id: 3, label: "Performance Treino" },
+              { id: 3, label: "Autoestima e Confiança" },
               { id: 4, label: "Estilo de Vida" }
             ].map((item) => (
               <motion.div
