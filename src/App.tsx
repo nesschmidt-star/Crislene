@@ -405,59 +405,6 @@ export default function App() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-white px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 md:mb-20">
-            <span className="text-brand-yellow font-bold uppercase tracking-[0.3em] text-[10px] md:text-xs mb-4 block">Experiências Reais</span>
-            <h2 className="text-3xl md:text-6xl font-serif text-brand-brown">Nossas <span className="italic text-brand-yellow">nutrividas</span></h2>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {[
-              {
-                name: "Mariana Silva",
-                role: "Emagrecimento",
-                text: "A Cris mudou minha relação com a comida. Hoje como de tudo sem culpa e consegui atingir meu peso ideal com leveza.",
-                image: "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=200&h=200&auto=format&fit=crop"
-              },
-              {
-                name: "Ana Godoy",
-                role: "Bem-estar",
-                text: "O acompanhamento com a Cris foi um divisor de águas. Melhorei minha disposição e níveis de energia logo nas primeiras semanas.",
-                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&auto=format&fit=crop"
-              },
-              {
-                name: "Camila Matos",
-                role: "Saúde da Mulher",
-                text: "Atendimento humano e acolhedor. Me sinto ouvida e as orientações são muito fáceis de aplicar no dia a dia corrido.",
-                image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&h=200&auto=format&fit=crop"
-              }
-            ].map((t, idx) => (
-              <motion.div
-                key={idx}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: idx * 0.1 }}
-                className="p-8 md:p-10 rounded-[24px] md:rounded-[32px] bg-brand-beige/30 border border-brand-brown/5 relative text-center md:text-left"
-              >
-                <div className="flex justify-center md:justify-start gap-1 mb-6 text-brand-yellow">
-                  {[1,2,3,4,5].map(i => <Leaf key={i} className="w-4 h-4 fill-current" />)}
-                </div>
-                <p className="text-brand-brown/80 text-base md:text-lg italic mb-10 leading-relaxed">
-                  "{t.text}"
-                </p>
-                <div className="flex flex-col md:flex-row items-center gap-4">
-                  <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full ring-2 ring-brand-yellow ring-offset-2" referrerPolicy="no-referrer" />
-                  <div>
-                    <h4 className="font-bold text-brand-brown leading-none">{t.name}</h4>
-                    <p className="text-[10px] uppercase tracking-widest text-brand-brown/50 mt-1 font-bold">{t.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="py-20 md:py-32 bg-white px-6 border-t border-brand-brown/5">
         <div className="max-w-7xl mx-auto">
